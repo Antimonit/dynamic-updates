@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         private const val DYNAMIC_USER_CONFIRMATION_RC = 1337
     }
 
-    private var manager = SplitInstallManagerFactory.create(applicationContext)
+    private val manager by lazy { SplitInstallManagerFactory.create(applicationContext) }
 
     private var sessionId: Int? = null
     private val sessionStateListener = SplitInstallStateUpdatedListener { state ->
