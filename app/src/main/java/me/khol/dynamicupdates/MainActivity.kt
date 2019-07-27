@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.google.android.play.core.splitinstall.SplitInstallException
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
 import com.google.android.play.core.splitinstall.SplitInstallRequest
@@ -16,14 +15,14 @@ import com.google.android.play.core.splitinstall.model.SplitInstallErrorCode
 import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus
 import me.khol.dynamicupdates.navigation.Navigation
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseSplitActivity() {
 
     companion object {
         private const val DYNAMIC_MODULE = "dynamic"
         private const val DYNAMIC_USER_CONFIRMATION_RC = 1337
     }
 
-    private val manager by lazy { SplitInstallManagerFactory.create(applicationContext) }
+    private val manager by lazy { SplitInstallManagerFactory.create(this) }
 
     private var sessionId: Int? = null
     private val sessionStateListener = SplitInstallStateUpdatedListener { state ->
