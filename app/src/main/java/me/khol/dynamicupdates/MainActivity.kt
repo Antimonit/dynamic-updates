@@ -19,7 +19,7 @@ import me.khol.dynamicupdates.navigation.Navigation
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        private const val DYNAMIC_MODULE = ":dynamic"
+        private const val DYNAMIC_MODULE = "dynamic"
         private const val DYNAMIC_USER_CONFIRMATION_RC = 1337
     }
 
