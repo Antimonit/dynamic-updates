@@ -1,4 +1,4 @@
-apply plugin: 'com.android.dynamic-feature'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
@@ -7,13 +7,12 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
     }
 }
 
 dependencies {
-    implementation project(':app')
-
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.core:core-ktx:1.0.2'
 }
