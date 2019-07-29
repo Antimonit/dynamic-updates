@@ -8,14 +8,17 @@ android {
         applicationId "me.khol.dynamicupdates"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 9
-        versionName "1.0.9"
+        versionCode 10
+        versionName "1.1.0"
     }
 
     dynamicFeatures = [":dynamic"]
 }
 
 dependencies {
+    implementation project(":static")
+    implementation project(":static2")
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.2'
