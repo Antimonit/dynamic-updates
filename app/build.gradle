@@ -13,6 +13,7 @@ android {
     }
 
     dynamicFeatures = [":dynamic"]
+    namespace 'me.khol.dynamicupdates'
 }
 
 dependencies {

@@ -8,6 +8,7 @@ android {
         minSdkVersion 26
         targetSdkVersion 34
     }
+    namespace 'me.khol.astatic'
 }
 
 dependencies {
