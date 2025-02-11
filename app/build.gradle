@@ -30,7 +30,6 @@ dependencies {
     implementation project(":static")
     implementation project(":static2")
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation "com.google.android.play:feature-delivery-ktx:2.1.0"
