@@ -11,7 +11,10 @@
     </dist:module>
 
     <application>
-        <activity android:name=".DynamicActivity"></activity>
+        <activity
+            android:name=".DynamicActivity"
+            android:exported="true"
+            />
     </application>
 
 </manifest>
