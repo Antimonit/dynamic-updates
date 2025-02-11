@@ -2,10 +2,10 @@ apply plugin: 'com.android.dynamic-feature'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 34
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 26
+        minSdk 26
     }
     namespace 'me.khol.dynamic'
 }
