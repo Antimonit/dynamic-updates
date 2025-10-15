@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 36
+    compileSdk libs.versions.compile.sdk.get().toInteger()
 
     defaultConfig {
         applicationId "me.khol.dynamicupdates"
-        minSdk 26
-        targetSdk 35
+        minSdk libs.versions.min.sdk.get().toInteger()
+        targetSdk libs.versions.target.sdk.get().toInteger()
         versionCode 14
         versionName "1.1.4"
     }

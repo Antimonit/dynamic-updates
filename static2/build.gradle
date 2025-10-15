@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk 35
+    compileSdk libs.versions.compile.sdk.get().toInteger()
 
     defaultConfig {
-        minSdk 26
-        targetSdk 34
+        minSdk libs.versions.min.sdk.get().toInteger()
+        targetSdk libs.versions.target.sdk.get().toInteger()
     }
     namespace 'me.khol.static2'
 
