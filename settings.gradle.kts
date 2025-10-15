@@ -13,4 +13,9 @@ dependencyResolutionManagement {
     }
 }
 
-include ':app', ':dynamic', ':static', ':static2'
+include(
+    ":app",
+    ":dynamic",
+    ":static",
+    ":static2",
+)
