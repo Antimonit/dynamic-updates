@@ -1,0 +1,12 @@
+[versions]
+androidx-appcompat = "1.7.1"
+androidx-core = "1.17.0"
+feature-delivery = "2.1.0"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx-appcompat" }
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
+feature-delivery = { module = "com.google.android.play:feature-delivery-ktx", version.ref = "feature-delivery" }
+
+[plugins]
+
