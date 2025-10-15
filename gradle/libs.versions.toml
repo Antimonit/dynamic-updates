@@ -3,6 +3,9 @@ compile-sdk = "36"
 min-sdk = "26"
 target-sdk = "35"
 
+kotlin = "1.8.21"
+agp = "8.8.0"
+
 androidx-appcompat = "1.7.1"
 androidx-core = "1.17.0"
 feature-delivery = "2.1.0"
@@ -11,6 +14,9 @@ feature-delivery = "2.1.0"
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx-appcompat" }
 androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
 feature-delivery = { module = "com.google.android.play:feature-delivery-ktx", version.ref = "feature-delivery" }
+
+kotlin = { module = "org.jetbrains.kotlin:kotlin", version.ref = "kotlin" }
+agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 
 [plugins]
 
