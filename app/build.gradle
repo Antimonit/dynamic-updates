@@ -10,8 +10,8 @@ android {
         applicationId "me.khol.dynamicupdates"
         minSdk libs.versions.min.sdk.get().toInteger()
         targetSdk libs.versions.target.sdk.get().toInteger()
-        versionCode 14
-        versionName "1.1.4"
+        versionCode 15
+        versionName "1.1.5"
     }
 
     dynamicFeatures = [":dynamic"]
