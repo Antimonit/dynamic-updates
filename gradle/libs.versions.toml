@@ -3,7 +3,7 @@ compile-sdk = "36"
 min-sdk = "26"
 target-sdk = "35"
 
-kotlin = "1.8.21"
+kotlin = "2.2.20"
 android = "8.12.3"
 
 androidx-appcompat = "1.7.1"
