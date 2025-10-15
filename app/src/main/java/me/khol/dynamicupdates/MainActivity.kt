@@ -93,7 +93,7 @@ class MainActivity : BaseSplitActivity() {
             SplitInstallSessionStatus.DOWNLOADING -> {
                 val done = state.bytesDownloaded()
                 val total = state.totalBytesToDownload()
-                val progress = done * 100 / total
+                val progress = if (total > 0) { done * 100 / total } else { 0 }
                 "Downloading $progress% | $done/$total"
             }
             SplitInstallSessionStatus.DOWNLOADED -> "Downloaded"
