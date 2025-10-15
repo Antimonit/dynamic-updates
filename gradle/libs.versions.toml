@@ -4,7 +4,7 @@ min-sdk = "26"
 target-sdk = "35"
 
 kotlin = "1.8.21"
-agp = "8.8.0"
+android = "8.8.0"
 
 androidx-appcompat = "1.7.1"
 androidx-core = "1.17.0"
@@ -15,8 +15,8 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "a
 androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
 feature-delivery = { module = "com.google.android.play:feature-delivery-ktx", version.ref = "feature-delivery" }
 
-kotlin = { module = "org.jetbrains.kotlin:kotlin", version.ref = "kotlin" }
-agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
-
 [plugins]
-
+android-application = { id = "com.android.application", version.ref = "android" }
+android-library = { id = "com.android.library", version.ref = "android" }
+android-dynamic-feature = { id = "com.android.dynamic-feature", version.ref = "android" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
